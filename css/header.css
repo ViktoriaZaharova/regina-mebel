@@ -1,6 +1,6 @@
 header {
   position: relative;
-  z-index: 1;
+  z-index: 11;
 }
 header .container-fluid {
   padding: 0 40px;
@@ -26,10 +26,10 @@ header .container-fluid {
   z-index: 10;
   background: #fff;
   padding: 8px 0;
+  font-size: 25px;
 }
 
 .header-title {
-  font-size: 25px;
   margin: 0 15px 0 0;
 }
 
@@ -116,7 +116,7 @@ header .container-fluid {
   right: 0;
   background: #fff;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-  z-index: 11;
+  z-index: 12;
   padding: 45px 0;
   transform: translateY(-100%);
   transition: all ease 0.3s;
@@ -142,7 +142,6 @@ header .container-fluid {
 }
 .form-search input {
   width: 100%;
-  height: 60px;
   padding: 0 55px;
 }
 .form-search [type=submit] {
@@ -160,11 +159,45 @@ header .container-fluid {
 }
 
 .search-wrapper__close {
-  margin: 0 20px;
+  margin: 0 0 0 20px;
   max-width: 28px;
   min-width: 28px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn-burger {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 28px;
+  height: 20px;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+}
+.btn-burger span {
+  background: rgb(111, 17, 43);
+  width: 100%;
+  height: 3px;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+.btn-burger.click span {
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+.btn-burger.click span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.btn-burger.click span:nth-child(2) {
+  opacity: 0;
+}
+.btn-burger.click span:nth-child(3) {
+  transform: rotate(-45deg);
 }

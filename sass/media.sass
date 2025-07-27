@@ -2,21 +2,216 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px)
+  .header-top, .menu > li > a, .menu-category > li > a
+    font-size: 18px
+
+  .dropdown-menu a
+    font-size: 16px
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+
+  .dropdown-menu
+    min-width: 260px
+    max-width: 260px
+
+  header .container-fluid
+    padding: 0 20px
+
+  .catalog-section-wrapper .container
+    padding: 0 10px
+
+  .catalog-section-wrapper
+    .row
+      margin: 0 -10px
+      > *
+        padding: 0 10px
 
 @media only screen and (max-width: 992px)
+  h1, .h1
+    font-size: 60px
+
+  .btn-search-fixed
+    width: 60px
+    height: 60px
+    right: 20px
+    top: 50%
+    transform: translate(0,-50%)
+
+  .advantages-box
+    font-size: 16px
+
+  .advantages-section h2
+    font-size: 40px
+    margin: 0 auto 20px
+
+  .advantages-section h3
+    font-size: 24px
+
+  .box-text-big
+    font-size: 18px
+    line-height: normal
+
+  .box-text p
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+
+  .slogan-company-wrapper
+    padding: 20px 0
+
+  .about-company
+    max-width: none
+
+  .btn
+    height: 40px
+    padding: 10px 30px
+    font-size: 16px
+
+  .about-slider
+    margin: 30px auto 0
+
+  footer .address, footer
+    font-size: 20px
+    line-height: normal
+
+  footer .address
+    margin: 20px 0
+
+  .home-slider-preview
+    padding: 25px 50px
+
+@media only screen and (max-width: 900px)
+  .header-bottom
+    display: none
+
+  .nav-menu-header
+    display: none
+    width: 100%
+    order: 1
+    padding: 20px 0
+    text-align: center
+    
+
+  .header-title
+    margin: 0 auto 10px
+
+  .menu
+    margin: 0
+    li
+      width: 100%
+      margin: 0 0 10px
+      padding: 0
+      &:last-child
+        margin: 0
+      a
+        margin: 0 auto
+        padding: 0
+    .dropdown-menu
+      position: relative !important
+      width: 100% !important
+      left: 0 !important
+      right: 0 !important
+      top: 0 !important
+      transform: none !important
+      margin: 20px 0 !important
+      padding: 15px
+      min-width: auto
+      max-width: none
+      box-shadow: none
+      border-top: 1px solid #ccc
+      border-bottom: 1px solid #ccc
+      transition: .3s ease
+      &::before
+        display: none
+
+
+  .btn-burger
+    display: flex
+
+  body
+    padding: 80px 0 0
+
+  .search-wrapper-fixed
+    padding: 20px 0
+
+  input
+    height: 50px
+
+  .form-search [type=submit]
+    height: 50px
+
+  .search-wrapper__close
+    width: 20px
+    height: 20px
+    min-width: 20px
 
 @media only screen and (max-width: 768px)
+  .home-slider-preview .home-slider-item
+    width: 180px
+    height: 100px
+
+  .advantages-section h2
+    font-size: 30px
+
+  .advantages-section h3
+    font-size: 20px
+
+  h1, .h1
+    font-size: 50px
+
+  .footer-certificates-link
+    width: 180px
+    padding: 15px
+    height: 90px
 
 @media only screen and (max-width: 576px)
+  .advantages-section h2
+    font-size: 20px
+
+  .advantages-section h3
+    font-size: 16px
+
+  h1, .h1
+    font-size: 40px
+
+  footer .address, footer
+    font-size: 16px
+
+  .footer-certificates-link
+    width: auto
+    flex: 1
+
+  .slogan-company h2
+    font-size: 18px
+
+  .home-slider-preview
+    padding: 20px 40px
+
+  .home-slider-preview .home-slider-item
+    width: 150px
+
+  .btn-search-fixed
+    width: 50px
+    height: 50px
 
 @media only screen and (max-width: 480px)
+  h1, .h1
+    font-size: 30px
+    margin: 0 0 20px
 
 @media only screen and (max-width: 420px)
+  footer
+    font-size: 14px
+    .address
+      font-size: 14px
 
-@media only screen and (max-width: 370px)
-
-@media (min-width: 992px) 
-  .dropdown:hover > .dropdown-menu
-    display: block
-
-   
+@media only screen and (min-width: 900px)
+  .dropdown
+    &:hover
+      .dropdown-menu
+        display: block
+      .dropdown-toggle
+        opacity: 0.7
+        &:after
+          transform: translateY(-50%) rotate(180deg)

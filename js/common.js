@@ -86,3 +86,9 @@ $(document).ready(function () {
     $('.search-wrapper-fixed').removeClass('active');
   });
 });
+
+// mobile menu
+$('.btn-burger').on('click', function () {
+    $('.nav-menu-header').slideToggle();
+    $(this).toggleClass('click');
+});
