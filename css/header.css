@@ -6,19 +6,6 @@ header .container-fluid {
   padding: 0 40px;
 }
 
-.header-top {
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  background: #fff;
-}
-
-.header-bottom {
-  background: rgb(111, 17, 43);
-  color: #fff;
-}
-
 .logo {
   max-width: 150px;
   width: 100%;
@@ -31,8 +18,73 @@ header .container-fluid {
   width: 100%;
 }
 
+.header-top {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+  padding: 8px 0;
+}
+
+.header-title {
+  font-size: 25px;
+  margin: 0 15px 0 0;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 0 -26px;
+}
+.menu > li {
+  padding: 0 15px;
+}
+.menu > li:last-child {
+  padding-right: 0;
+}
+.menu > li:last-child .dropdown-menu {
+  transform: none;
+  left: auto;
+  right: 0;
+}
+.menu > li:last-child .dropdown-menu::before {
+  left: 80%;
+}
+.menu > li > a {
+  color: rgb(111, 17, 43);
+  font-size: 25px;
+  font-weight: 600;
+}
+.menu > li > a:hover {
+  color: rgb(111, 17, 43);
+}
+.header-bottom {
+  background: rgb(111, 17, 43);
+  color: #fff;
+  padding: 80px 0 0;
+}
+
 .nav-menu-category {
   border-top: 1px solid #fff;
+  width: 100%;
+  padding: 14.5px 0;
+}
+
+.menu-category {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 -26px;
+}
+.menu-category > li > a {
+  font-size: 25px;
+  font-weight: normal;
+  color: #fff;
 }
 
 .btn-search-fixed {
@@ -55,4 +107,64 @@ header .container-fluid {
 }
 .btn-search-fixed:hover {
   transform: scale(1.1);
+}
+
+.search-wrapper-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  z-index: 11;
+  padding: 45px 0;
+  transform: translateY(-100%);
+  transition: all ease 0.3s;
+  opacity: 0;
+}
+.search-wrapper-fixed.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.form-search {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.form-search label {
+  margin: 0;
+}
+.form-search input {
+  width: 100%;
+  height: 60px;
+  padding: 0 55px;
+}
+.form-search [type=submit] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 55px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.search-wrapper__close {
+  margin: 0 20px;
+  max-width: 28px;
+  min-width: 28px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

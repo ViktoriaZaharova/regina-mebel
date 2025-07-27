@@ -6,19 +6,6 @@ header
   .container-fluid
     padding: 0 40px
 
-
-.header-top
-  // position: fixed
-  left: 0
-  top: 0
-  width: 100%
-  z-index: 10
-  background: #fff
-
-.header-bottom
-  background: rgba(111,17,43,1)
-  color: #fff    
-
 .logo
   max-width: 150px
   width: 100%
@@ -27,9 +14,65 @@ header
   img
     width: 100%
 
+.header-top
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 10
+  background: #fff
+  padding: 8px 0
+
+.header-title
+  font-size: 25px
+  margin: 0 15px 0 0
+
+.menu
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 0 -26px
+  >li
+    padding: 0 15px
+    &:last-child
+      padding-right: 0
+      .dropdown-menu
+        transform: none
+        left: auto
+        right: 0
+        &::before
+          left: 80%
+    >a
+      color: $accent
+      font-size: 25px
+      font-weight: 600
+      &:hover
+        color: $accent
+      &:after
+
+.header-bottom
+  background: rgba(111,17,43,1)
+  color: #fff
+  padding: 80px 0 0
+
 .nav-menu-category
   border-top: 1px solid #fff
-      
+  width: 100%
+  padding: 14.5px 0
+
+.menu-category
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 0 0 -26px
+  >li
+    >a
+      font-size: 25px
+      font-weight: normal
+      color: #fff
+
 .btn-search-fixed
   top: 200px
   right: 50px
@@ -47,3 +90,53 @@ header
   overflow: hidden
   &:hover
     transform: scale(1.1)
+
+.search-wrapper-fixed
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  background: #fff
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1)
+  z-index: 11
+  padding: 45px 0
+  transform: translateY(-100%)
+  transition: all ease 0.3s
+  opacity: 0
+  &.active
+    transform: translateY(0)
+    opacity: 1
+
+.form-search
+  margin: 0 auto
+  max-width: 800px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  z-index: 1
+  label
+    margin: 0
+  input
+    width: 100%
+    height: 60px
+    padding: 0 55px
+  [type="submit"]
+    position: absolute
+    left: 0
+    top: 0
+    width: 55px
+    height: 60px
+    border: none
+    cursor: pointer
+    @include d-flex
+    background: transparent
+
+
+.search-wrapper__close
+  margin: 0 20px
+  max-width: 28px
+  min-width: 28px
+  width: 100%
+  @include d-flex

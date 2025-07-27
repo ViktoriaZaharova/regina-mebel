@@ -16,6 +16,7 @@ $('.home-slider-preview').slick({
     slidesToShow: 5,
     dots: false,
     variableWidth: true,
+    centerMode: true,
     arrows: true,
     // infinite: false,
     asNavFor: '.home-slider',
@@ -57,4 +58,31 @@ $('.about-slider').slick({
 // Fancybox
 Fancybox.bind("[data-fancybox]", {
     // Your custom options
+});
+
+// search fixed   
+$(document).ready(function () {
+  // Открытие по клику на кнопку
+  $('.btn-search-fixed').on('click', function (e) {
+    e.stopPropagation(); // чтобы клик не дошёл до документа
+    $('.search-wrapper-fixed').toggleClass('active');
+  });
+
+  // Закрытие по клику вне блока
+  $(document).on('click', function (e) {
+    const $search = $('.search-wrapper-fixed');
+    if (!$search.is(e.target) && $search.has(e.target).length === 0) {
+      $search.removeClass('active');
+    }
+  });
+
+  // Предотвращаем закрытие при клике внутри самого поиска
+  $('.search-wrapper-fixed').on('click', function (e) {
+    e.stopPropagation();
+  });
+
+  // Закрытие по кнопке "крестик"
+  $('.search-wrapper__close').on('click', function () {
+    $('.search-wrapper-fixed').removeClass('active');
+  });
 });

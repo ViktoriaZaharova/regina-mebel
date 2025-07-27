@@ -28,36 +28,71 @@
 
   <a href="#" class="btn-search-fixed"><img src="img/search-icon.svg" alt=""></a>
 
+  <div class="search-wrapper-fixed">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <form method="post" class="form-search">
+            <label>
+              <input type="text" placeholder="Поиск" name="search" required>
+            </label>
+            <button type="submit"><img src="img/search-icon-mini.svg" alt=""></button>
+            <a href="#" class="search-wrapper__close"><img src="img/close-icon.svg" alt=""></a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <header>
     <div class="header-top">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 d-flex flex-wrap align-items-center">
             <a href="index.html" class="logo"><img src="img/logo.jpeg" alt=""></a>
+            <div class="header-title text-uppercase fw-600 color-accent">Мебельная фабрика "Регина"</div>
 
-
+            <nav class="nav nav-menu-header">
+              <ul class="menu my-ul">
+                <li class="dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Каталог</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><span class="dropdown-item__icon"><img
+                            src="img/IMG_3261.JPEG.webp" alt=""></span>Мягкая мебель</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="dropdown-item__icon"><img
+                            src="img/IMG_3267.JPEG.webp" alt=""></span>Корпусная мебель</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="dropdown-item__icon"><img
+                            src="img/IMG_3269.JPEG.webp" alt=""></span>Интерьерные кровати</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Для партнёров</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><span class="dropdown-item__icon"><img
+                            src="img/IMG_8806.JPEG.webp" alt=""></span>Рекламные материалы для скачивания</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="dropdown-item__icon"><img
+                            src="img/IMG_8805.JPEG.webp" alt=""></span>Информационные письма</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="dropdown-item__icon"><img
+                            src="img/IMG_8807.JPEG.webp" alt=""></span>Актуальные остатки тканей</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Контакты</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><span class="dropdown-item__icon"><img
+                            src="img/phone_contact_call_ring.svg" alt=""></span>Контакты</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="dropdown-item__icon"><img
+                            src="img/hands_partnership.svg" alt=""></span>Вакансии</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
           </div>
-        </div>
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">Регина</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarMain">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="#">Каталог</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Партнерам</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="nav-categories py-2">
-          <a href="#" class="btn btn-outline-secondary btn-sm">Диваны прямые</a>
-          <a href="#" class="btn btn-outline-secondary btn-sm">Диваны угловые</a>
-          <a href="#" class="btn btn-outline-secondary btn-sm">Кресла</a>
-          <!-- и другие -->
         </div>
       </div>
+
+
     </div>
     <div class="header-bottom">
       <div class="container-fluid">
@@ -65,7 +100,7 @@
           <div class="col-12 d-flex flex-wrap align-items-center">
             <nav class="nav nav-menu-category">
               <ul class="menu-category my-ul">
-                <li class="menu-category-item"><a href="#" class="menu-category-link dropdown-toggle"
+                <li class="menu-category-item dropdown"><a href="#" class="menu-category-link dropdown-toggle"
                     data-bs-toggle="dropdown">
                     Мягкая мебель</a>
                   <div class="dropdown-menu">
@@ -74,45 +109,63 @@
                       <span class="dropdown-menu-link__text">Диваны прямые</span>
                     </a>
                     <a href="category.html" class="dropdown-menu-link">
-                      <span class="dropdown-menu-link__icon"><img src="img/IMG_3261.JPEG.webp" alt=""></span>
-                      <span class="dropdown-menu-link__text">Диваны прямые</span>
+                      <span class="dropdown-menu-link__icon"><img src="img/IMG_3262.JPEG.webp" alt=""></span>
+                      <span class="dropdown-menu-link__text">Диваны угловые</span>
                     </a>
                     <a href="category.html" class="dropdown-menu-link">
-                      <span class="dropdown-menu-link__icon"><img src="img/IMG_3261.JPEG.webp" alt=""></span>
-                      <span class="dropdown-menu-link__text">Диваны прямые</span>
+                      <span class="dropdown-menu-link__icon"><img src="img/IMG_3263.JPEG.webp" alt=""></span>
+                      <span class="dropdown-menu-link__text">Кресла</span>
                     </a>
                     <a href="category.html" class="dropdown-menu-link">
-                      <span class="dropdown-menu-link__icon"><img src="img/IMG_3261.JPEG.webp" alt=""></span>
-                      <span class="dropdown-menu-link__text">Диваны прямые</span>
+                      <span class="dropdown-menu-link__icon"><img src="img/IMG_3264.JPEG.webp" alt=""></span>
+                      <span class="dropdown-menu-link__text">Пуфы</span>
                     </a>
                   </div>
+                </li>
+                <li class="menu-category-item dropdown"><a href="#" class="menu-category-link dropdown-toggle"
+                    data-bs-toggle="dropdown">
+                    Корпусная мебель</a>
+                  <div class="dropdown-menu">
+                    <a href="category.html" class="dropdown-menu-link">
+                      <span class="dropdown-menu-link__icon"><img src="img/IMG_3265.JPEG.webp" alt=""></span>
+                      <span class="dropdown-menu-link__text">Спальни</span>
+                    </a>
+                    <a href="category.html" class="dropdown-menu-link">
+                      <span class="dropdown-menu-link__icon"><img src="img/IMG_3266.JPEG.webp" alt=""></span>
+                      <span class="dropdown-menu-link__text">
+                        Молодежные</span>
+                    </a>
+                    <a href="category.html" class="dropdown-menu-link">
+                      <span class="dropdown-menu-link__icon"><img src="img/IMG_3267.JPEG.webp" alt=""></span>
+                      <span class="dropdown-menu-link__text">Гостиные</span>
+                    </a>
+                    <a href="category.html" class="dropdown-menu-link">
+                      <span class="dropdown-menu-link__icon"><img src="img/IMG_3268.JPEG.webp" alt=""></span>
+                      <span class="dropdown-menu-link__text">Тумбы и консоли</span>
+                    </a>
+                    <a href="category.html" class="dropdown-menu-link">
+                      <span class="dropdown-menu-link__icon"><img src="img/IMG_3270.JPEG.webp" alt=""></span>
+                      <span class="dropdown-menu-link__text">Прихожие</span>
+                    </a>
+                    <a href="category.html" class="dropdown-menu-link">
+                      <span class="dropdown-menu-link__icon"><img src="img/IMG_3271.JPEG.webp" alt=""></span>
+                      <span class="dropdown-menu-link__text">Столы журнальные</span>
+                    </a>
+                    <a href="category.html" class="dropdown-menu-link">
+                      <span class="dropdown-menu-link__icon"><img src="img/IMG_3898.JPEG.webp" alt=""></span>
+                      <span class="dropdown-menu-link__text">Коллекции</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Интерьерные кровати</a>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">Регина</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarMain">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="#">Каталог</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Партнерам</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="nav-categories py-2">
-          <a href="#" class="btn btn-outline-secondary btn-sm">Диваны прямые</a>
-          <a href="#" class="btn btn-outline-secondary btn-sm">Диваны угловые</a>
-          <a href="#" class="btn btn-outline-secondary btn-sm">Кресла</a>
-          <!-- и другие -->
-        </div>
       </div>
     </div>
-
   </header>
 
   <main class="home">
@@ -153,28 +206,28 @@
                   src="img/IMG_5376.JPEG.webp" alt=""></a>
             </div>
             <div class="slide">
-              <a href="img/MG_5390.JPEG.webp" class="home-slider-item" data-fancybox="gallery-home"><img
-                  src="img/MG_5390.JPEG.webp" alt=""></a>
+              <a href="img/IMG_5390.JPEG.webp" class="home-slider-item" data-fancybox="gallery-home"><img
+                  src="img/IMG_5390.JPEG.webp" alt=""></a>
             </div>
             <div class="slide">
-              <a href="img/MG_5378.JPEG.webp" class="home-slider-item" data-fancybox="gallery-home"><img
-                  src="img/MG_5378.JPEG.webp" alt=""></a>
+              <a href="img/IMG_5378.JPEG.webp" class="home-slider-item" data-fancybox="gallery-home"><img
+                  src="img/IMG_5378.JPEG.webp" alt=""></a>
             </div>
             <div class="slide">
-              <a href="img/MG_5396.JPEG.webp" class="home-slider-item" data-fancybox="gallery-home"><img
-                  src="img/MG_5396.JPEG.webp" alt=""></a>
+              <a href="img/IMG_5396.jpeg" class="home-slider-item" data-fancybox="gallery-home"><img
+                  src="img/IMG_5396.jpeg" alt=""></a>
             </div>
             <div class="slide">
-              <a href="img/MG_5382.JPEG.webp" class="home-slider-item" data-fancybox="gallery-home"><img
-                  src="img/MG_5382.JPEG.webp" alt=""></a>
+              <a href="img/IMG_5382.jpeg" class="home-slider-item" data-fancybox="gallery-home"><img
+                  src="img/IMG_5382.jpeg" alt=""></a>
             </div>
             <div class="slide">
-              <a href="img/MG_5384.JPEG.webp" class="home-slider-item" data-fancybox="gallery-home"><img
-                  src="img/MG_5384.JPEG.webp" alt=""></a>
+              <a href="img/IMG_5384.jpeg" class="home-slider-item" data-fancybox="gallery-home"><img
+                  src="img/IMG_5384.jpeg" alt=""></a>
             </div>
             <div class="slide">
-              <a href="img/MG_5388.JPEG.webp" class="home-slider-item" data-fancybox="gallery-home"><img
-                  src="img/MG_5388.JPEG.webp" alt=""></a>
+              <a href="img/IMG_5388.jpeg" class="home-slider-item" data-fancybox="gallery-home"><img
+                  src="img/IMG_5388.jpeg" alt=""></a>
             </div>
           </div>
           <div class="home-slider-preview">
@@ -197,28 +250,28 @@
               <div class="home-slider-item"><img src="img/IMG_5394.JPEG.webp" alt=""></div>
             </div>
             <div class="slide">
-              <div class="home-slider-item"><img src="img/MG_5374.JPEG.webp" alt=""></div>
+              <div class="home-slider-item"><img src="img/IMG_5374.JPEG.webp" alt=""></div>
             </div>
             <div class="slide">
-              <div class="home-slider-item"><img src="img/MG_5376.JPEG.webp" alt=""></div>
+              <div class="home-slider-item"><img src="img/IMG_5376.JPEG.webp" alt=""></div>
             </div>
             <div class="slide">
-              <div class="home-slider-item"><img src="img/MG_5390.JPEG.webp" alt=""></div>
+              <div class="home-slider-item"><img src="img/IMG_5390.JPEG.webp" alt=""></div>
             </div>
             <div class="slide">
-              <div class="home-slider-item"><img src="img/MG_5378.JPEG.webp" alt=""></div>
+              <div class="home-slider-item"><img src="img/IMG_5378.JPEG.webp" alt=""></div>
             </div>
             <div class="slide">
-              <div class="home-slider-item"><img src="img/MG_5396.JPEG.webp" alt=""></div>
-            </div>
-             <div class="slide">
-              <div class="home-slider-item"><img src="img/MG_5382.JPEG.webp" alt=""></div>
-            </div>
-             <div class="slide">
-              <div class="home-slider-item"><img src="img/MG_5384.JPEG.webp" alt=""></div>
+              <div class="home-slider-item"><img src="img/IMG_5396.jpeg" alt=""></div>
             </div>
             <div class="slide">
-              <div class="home-slider-item"><img src="img/MG_5388.JPEG.webp" alt=""></div>
+              <div class="home-slider-item"><img src="img/IMG_5382.jpeg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="home-slider-item"><img src="img/IMG_5384.jpeg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="home-slider-item"><img src="img/IMG_5388.jpeg" alt=""></div>
             </div>
           </div>
         </div>

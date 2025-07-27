@@ -1,6 +1,11 @@
+.home {
+  background: #ededed;
+  padding: 35px 0;
+}
+
 .home-slider-preview {
   width: 100%;
-  padding: 15px 70px;
+  padding: 25px 70px;
 }
 .home-slider-preview .slide {
   padding: 10px 0 0;
@@ -13,13 +18,16 @@
   border: 2px solid transparent;
   cursor: pointer;
 }
+.home-slider-preview .home-slider-item:hover {
+  transform: translateY(-10px);
+}
 .home-slider-preview .slick-current .home-slider-item {
   transform: translateY(-10px);
   border-color: rgba(0, 0, 0, 0.15);
 }
 
 .home-slider {
-  max-width: 1060px;
+  max-width: 845px;
   width: 100%;
   margin: 0 auto;
 }

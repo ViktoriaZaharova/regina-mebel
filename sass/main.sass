@@ -1,8 +1,12 @@
 @import "vars"
 // home
+.home
+  background: #ededed
+  padding: 35px 0
+
 .home-slider-preview
   width: 100%
-  padding: 15px 70px
+  padding: 25px 70px
   .slide
     padding: 10px 0 0
   .home-slider-item
@@ -12,6 +16,8 @@
     transition: all 0.3s ease-in-out
     border: 2px solid transparent
     cursor: pointer
+    &:hover
+      transform: translateY(-10px)
   .slick-current
     
     .home-slider-item
@@ -19,7 +25,7 @@
       border-color: rgba(0,0,0,.15)
       
 .home-slider
-  max-width: 1060px
+  max-width: 845px
   width: 100%
   margin: 0 auto
   .home-slider-item
