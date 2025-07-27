@@ -1,0 +1,58 @@
+header {
+  position: relative;
+  z-index: 1;
+}
+header .container-fluid {
+  padding: 0 40px;
+}
+
+.header-top {
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+}
+
+.header-bottom {
+  background: rgb(111, 17, 43);
+  color: #fff;
+}
+
+.logo {
+  max-width: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0 0;
+}
+.logo img {
+  width: 100%;
+}
+
+.nav-menu-category {
+  border-top: 1px solid #fff;
+}
+
+.btn-search-fixed {
+  top: 200px;
+  right: 50px;
+  width: 82px;
+  height: 82px;
+  z-index: 10;
+  position: fixed;
+  border: 1px solid #6f112b;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  will-change: transform;
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+}
+.btn-search-fixed:hover {
+  transform: scale(1.1);
+}

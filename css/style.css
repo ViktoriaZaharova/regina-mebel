@@ -1,0 +1,354 @@
+@font-face {
+  font-family: "AvantGardeCTT";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/AvantGardeCTT/AvantGardeCTT.eot");
+  src: url("../fonts/AvantGardeCTT/AvantGardeCTT.eot?#iefix") format("embedded-opentype"), url("../fonts/AvantGardeCTT/AvantGardeCTT.woff") format("woff"), url("../fonts/AvantGardeCTT/AvantGardeCTT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AvantGardeCTT";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/AvantGardeCTT/AvantGardeCTT-Bold.eot");
+  src: url("../fonts/AvantGardeCTT/AvantGardeCTT-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvantGardeCTT/AvantGardeCTT-Bold.woff") format("woff"), url("../fonts/AvantGardeCTT/AvantGardeCTT-Bold.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 320px;
+  position: relative;
+  line-height: normal;
+  font-family: "AvantGardeCTT", sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  transition: 0.3s ease;
+  outline: none;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+input, textarea, select {
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0 15px;
+  box-sizing: border-box;
+  font-family: "AvantGardeCTT", sans-serif;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 54px;
+  background: transparent;
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+}
+input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  color: #595959;
+}
+input::placeholder, textarea::placeholder, select::placeholder {
+  color: #595959;
+}
+input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input[type=radio], input[type=checkbox] {
+  width: auto;
+  height: auto;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  margin: 0 5px 0 0;
+  display: inline;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin: 0 0 13px;
+}
+label:last-child {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+  padding: 12px 17px;
+  height: 103px;
+}
+
+button, .btn {
+  outline: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: none;
+  font-family: "AvantGardeCTT", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+button:hover, button:focus, .btn:hover, .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 60px;
+  font-size: 16px;
+  font-weight: bold;
+  height: 60px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+.btn-accent {
+  border-color: #000;
+  color: #e3e3e3;
+  background: rgb(111, 17, 43);
+}
+.btn-accent:hover, .btn-accent:focus {
+  background: rgb(66.7734375, 10.2265625, 25.8671875);
+  border-color: rgb(66.7734375, 10.2265625, 25.8671875);
+  color: #fff;
+}
+
+.svg-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+strong, b {
+  font-weight: bold;
+  display: inline-block;
+}
+
+ul, ol {
+  padding: 0 0 0 20px;
+}
+
+.my-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-dots {
+  list-style-type: disc;
+}
+
+h1, .h1 {
+  width: 100%;
+  font-size: 82px;
+  line-height: 1.17;
+  text-transform: none;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+
+h2, .h2 {
+  width: 100%;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+  line-height: 1.17;
+  font-size: 28px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.p-30 {
+  padding: 30px 0;
+}
+
+.box-text p {
+  margin: 0 0 24px;
+}
+.box-text p:last-child {
+  margin: 0;
+}
+
+.box-text-big {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.7;
+}
+
+.container {
+  padding: 0 10px;
+  max-width: 1220px;
+}
+
+.row {
+  margin: 0 -10px;
+}
+.row > * {
+  padding: 0 10px;
+}
+
+.container-fluid {
+  padding: 0 10px;
+}
+
+.text-transform {
+  text-transform: uppercase;
+}
+
+.bg-accent {
+  background: rgb(111, 17, 43);
+  color: #fff;
+}
+
+.bg-gray {
+  background: #d8dad9;
+}
+
+.color-accent {
+  color: rgb(111, 17, 43);
+}
+
+.image-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-wrapper img {
+  width: 100%;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.slick-dots {
+  padding: 0;
+  list-style: none;
+  position: relative;
+  bottom: 0;
+  opacity: 1;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+}
+.slick-dots li {
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  background: #000;
+  transition: 0.3s ease;
+  border-radius: 50%;
+  margin: 10px 4px;
+}
+.slick-dots li.slick-active {
+  background: rgb(111, 17, 43);
+}
+.slick-dots li button {
+  display: none;
+}
+
+.label-checkbox {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  margin: 15px 0 0;
+  line-height: 1.14;
+}
+
+.inp-check {
+  display: none;
+}
+
+.checkbox-custom {
+  margin: 0 12px 0 0;
+  position: relative;
+  border-radius: 6px;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  cursor: pointer;
+}
+
+.inp-check:checked ~ .checkbox-custom {
+  background: #fff url("../img/check-black.svg") no-repeat center;
+  background-size: 8px;
+}

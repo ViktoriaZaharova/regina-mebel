@@ -1,0 +1,55 @@
+footer {
+  background: #d8dad9;
+  padding: 8px 0 0;
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: normal;
+}
+footer .address {
+  font-size: 26px;
+  margin: 30px auto;
+}
+
+.footer-certificates {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-certificates-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  padding: 20px;
+  height: 100px;
+}
+.footer-certificates-link img {
+  max-height: 100%;
+}
+
+.list-contacts {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+.list-contacts li {
+  margin: 0 0 12px;
+}
+.list-contacts li:last-child {
+  margin: 0;
+}
+.list-contacts a {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+.list-contacts a:hover {
+  color: rgb(111, 17, 43);
+}
+.list-contacts a img {
+  width: 28px;
+  min-width: 28px;
+  margin: 0 12px 0 0;
+}

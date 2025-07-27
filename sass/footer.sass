@@ -1,0 +1,47 @@
+@import "vars"
+
+footer
+  background: #d8dad9
+  padding: 8px 0 0
+  font-size: 26px
+  line-height: 40px
+  font-weight: normal
+  .address
+    font-size: 26px
+    margin: 30px auto
+  
+
+
+.footer-certificates
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: center
+  flex-wrap: wrap
+  &-link
+    @include d-flex
+    width: 240px
+    padding: 20px
+    height: 100px
+    img
+      max-height: 100%
+
+.list-contacts
+  width: 100%
+  max-width: 650px
+  margin: 0 auto 30px
+  li
+    margin: 0 0 12px
+    &:last-child
+      margin: 0
+  a
+    display: flex
+    align-items: center
+    color: #000
+    &:hover
+      color: $accent
+    img
+      width: 28px
+      min-width: 28px
+      margin: 0 12px 0 0            
+  
