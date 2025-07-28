@@ -319,6 +319,9 @@
   .nav-tabs li .nav-link {
     margin: 0 auto;
   }
+  .category-card__title {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 480px) {
   h1, .h1 {
