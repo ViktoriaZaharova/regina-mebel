@@ -3,10 +3,8 @@ $('[name="phone"]').mask('+7 (999) 999-99-99');
 // slick 
 $('.home-slider').slick({
   slidesToShow: 1,
-  // fade: true,
   dots: false,
   arrows: false,
-  // infinite: false,
   asNavFor: '.home-slider-preview',
   prevArrow: '<button type="button" class="slick-prev"></button>',
   nextArrow: '<button type="button" class="slick-next"></button>',
@@ -18,7 +16,6 @@ $('.home-slider-preview').slick({
   variableWidth: true,
   centerMode: true,
   arrows: true,
-  // infinite: false,
   asNavFor: '.home-slider',
   focusOnSelect: true,
   prevArrow: '<button type="button" class="slick-prev"></button>',
@@ -45,6 +42,54 @@ $('.home-slider-preview').slick({
   ]
 });
 
+$('.category-gallery-slider').slick({
+  slidesToShow: 1,
+  dots: false,
+  variableWidth: true,
+  centerMode: true,
+  arrows: false,
+  asNavFor: '.category-gallery',
+  focusOnSelect: true,
+
+  prevArrow: '<button type="button" class="slick-prev"></button>',
+  nextArrow: '<button type="button" class="slick-next"></button>',
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+      }
+    }
+  ]
+});
+
+$(window).on('load resize', function () {
+  if ($(window).width() < 992) {
+    $('.category-gallery:not(.slick-initialized)').slick({
+      dots: false,
+      infinite: true,
+      arrows: true,
+      asNavFor: '.category-gallery-slider',
+      prevArrow: '<button type="button" class="slick-prev"></button>',
+      nextArrow: '<button type="button" class="slick-next"></button>'
+    });
+  } else {
+    $(".category-gallery.slick-initialized").slick("unslick");
+  }
+});
+
 $('.about-slider').slick({
   slidesToShow: 1,
   fade: true,
@@ -54,6 +99,12 @@ $('.about-slider').slick({
   prevArrow: '<button type="button" class="slick-prev"></button>',
   nextArrow: '<button type="button" class="slick-next"></button>',
 });
+
+$('.modal').on('shown.bs.modal', function (e) {
+  $('.slick-slider').slick('setPosition')
+});
+
+
 
 // Fancybox
 Fancybox.bind("[data-fancybox]", {
@@ -108,7 +159,7 @@ $(document).ready(function () {
   // Скролл вверх при клике
   $('.btn-scroll-top').click(function (e) {
     e.preventDefault();
-   $(window).scrollTop(0);
+    $(window).scrollTop(0);
     return false;
   });
 });

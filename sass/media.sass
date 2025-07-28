@@ -33,6 +33,12 @@
     .btn
       font-size: 16px
 
+  .category-page .container-fluid
+    padding: 0 20px    
+
+  .nav-tabs li
+    margin: 0 30px 0 0
+
 @media only screen and (max-width: 992px)
   h1, .h1
     font-size: 60px
@@ -101,12 +107,27 @@
 
   .page h1
     font-size: 30px
-    margin: 0 auto 20px  
+    margin: 0 auto 20px
 
   .map
     margin: 30px 0 0
-    height: auto    
+    height: auto
 
+  .category-gallery-slider
+    display: block
+    margin: 20px auto
+
+  .category-gallery-slider__item
+    width: 60px
+    margin: 0 5px
+    border: 2px solid transparent
+    &.slick-current
+      border-color: rgba(0,0,0,.15)
+
+  .category-modal__content
+    position: relative
+    top: 0
+    
 @media only screen and (max-width: 920px)
   .header-bottom
     display: none
@@ -117,7 +138,6 @@
     order: 1
     padding: 20px 0
     text-align: center
-    
 
   .header-title
     margin: 0 auto 10px
@@ -151,7 +171,6 @@
       &::before
         display: none
 
-
   .btn-burger
     display: flex
 
@@ -172,6 +191,12 @@
     height: 20px
     min-width: 20px
 
+  .nav-tabs
+    font-size: 16px
+
+  .category-tabs-row
+    margin: 0 0 30px
+
 @media only screen and (max-width: 768px)
   .home-slider-preview .home-slider-item
     width: 180px
@@ -188,7 +213,7 @@
 
   h2, .h2
     font-size: 24px
-    line-height: normal  
+    line-height: normal
 
   .footer-certificates-link
     width: 180px
@@ -199,17 +224,17 @@
     font-size: 18px
 
   .mt-45
-    margin-top: 30px 
+    margin-top: 30px
 
   .electronic-catalog-box__title
     font-size: 22px
 
   .electronic-catalog-box .box-text
-    margin: 10px auto 0    
+    margin: 10px auto 0
     font-size: 14px
 
   .mt-30
-    margin-top: 20px     
+    margin-top: 20px
 
 @media only screen and (max-width: 576px)
   .advantages-section h2
@@ -248,7 +273,7 @@
     width: 30px
     min-width: 30px
     height: 32px
-    margin: 0 10px 0 0    
+    margin: 0 10px 0 0
 
   .electronic-catalog-box
     display: flex
@@ -256,8 +281,8 @@
     &__img
       width: 100%
     &__body
-      width: 100%    
-      
+      width: 100%
+
   .page h1
     font-size: 26px
 
@@ -269,6 +294,15 @@
     .btn
       font-size: 15px
 
+  .nav-tabs
+    li
+      width: 100%
+      margin: 0 auto 10px
+      &:last-child
+        margin: 0 auto
+      .nav-link
+        margin: 0 auto
+
 @media only screen and (max-width: 480px)
   h1, .h1
     font-size: 30px
@@ -276,7 +310,6 @@
 
   h2, .h2
     font-size: 20px
-
 
 @media only screen and (max-width: 420px)
   footer

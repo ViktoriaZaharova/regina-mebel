@@ -54,7 +54,7 @@ header .container-fluid {
   font-size: 25px;
   font-weight: 600;
 }
-.menu > li > a:hover {
+.menu > li > a:hover, .menu > li > a:focus {
   color: rgb(111, 17, 43);
 }
 .header-bottom {

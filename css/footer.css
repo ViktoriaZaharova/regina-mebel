@@ -53,3 +53,59 @@ footer .address {
   min-width: 28px;
   margin: 0 12px 0 0;
 }
+
+.modal {
+  z-index: 101;
+}
+
+.modal-backdrop {
+  background: #fff;
+  z-index: 99;
+}
+
+.modal-backdrop.show {
+  opacity: 0.3;
+}
+
+.modal-dialog {
+  max-width: 1240px;
+}
+
+.modal-header {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 0;
+  padding: 40px 20px;
+}
+
+.modal-body {
+  padding: 0;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+.btn-close {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  left: auto;
+  transform: none;
+  opacity: 1;
+  padding: 0;
+  background: url("../img/close-icon.svg") no-repeat center;
+  background-size: 100%;
+  z-index: 1;
+  cursor: pointer;
+  box-shadow: none;
+}
+.btn-close:hover, .btn-close:focus {
+  box-shadow: none;
+}
