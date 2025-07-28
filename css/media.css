@@ -66,9 +66,10 @@
     max-width: none;
   }
   .btn {
-    height: 40px;
+    height: 50px;
     padding: 10px 30px;
     font-size: 16px;
+    line-height: normal;
   }
   .about-slider {
     margin: 30px auto 0;
@@ -83,8 +84,23 @@
   .home-slider-preview {
     padding: 25px 50px;
   }
+  .p-90 {
+    padding: 40px 0;
+  }
+  .electronic-catalog-box__title {
+    font-size: 30px;
+    line-height: normal;
+  }
+  .electronic-catalog-box .box-text {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .page h1 {
+    font-size: 30px;
+    margin: 0 auto 20px;
+  }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 920px) {
   .header-bottom {
     display: none;
   }
@@ -167,10 +183,30 @@
   h1, .h1 {
     font-size: 50px;
   }
+  h2, .h2 {
+    font-size: 24px;
+    line-height: normal;
+  }
   .footer-certificates-link {
     width: 180px;
     padding: 15px;
     height: 90px;
+  }
+  .cooperation-box {
+    font-size: 18px;
+  }
+  .mt-45 {
+    margin-top: 30px;
+  }
+  .electronic-catalog-box__title {
+    font-size: 22px;
+  }
+  .electronic-catalog-box .box-text {
+    margin: 10px auto 0;
+    font-size: 14px;
+  }
+  .mt-30 {
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -203,11 +239,39 @@
     width: 50px;
     height: 50px;
   }
+  .cooperation {
+    padding: 40px 0;
+  }
+  .cooperation-box::before {
+    width: 30px;
+    min-width: 30px;
+    height: 32px;
+    margin: 0 10px 0 0;
+  }
+  .electronic-catalog-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .electronic-catalog-box__img {
+    width: 100%;
+  }
+  .electronic-catalog-box__body {
+    width: 100%;
+  }
+  .page h1 {
+    font-size: 26px;
+  }
+  .electronic-catalog-box__title {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 480px) {
   h1, .h1 {
     font-size: 30px;
     margin: 0 0 20px;
+  }
+  h2, .h2 {
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -217,8 +281,14 @@
   footer .address {
     font-size: 14px;
   }
+  .cooperation-box {
+    font-size: 16px;
+  }
+  .mt-45 {
+    margin-top: 25px;
+  }
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 920px) {
   .dropdown:hover .dropdown-menu {
     display: block;
   }

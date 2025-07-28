@@ -29,10 +29,6 @@ header .container-fluid {
   font-size: 25px;
 }
 
-.header-title {
-  margin: 0 15px 0 0;
-}
-
 .menu {
   display: flex;
   align-items: flex-start;
@@ -200,4 +196,17 @@ header .container-fluid {
 }
 .btn-burger.click span:nth-child(3) {
   transform: rotate(-45deg);
+}
+
+.btn-scroll-top {
+  position: fixed;
+  z-index: 1000;
+  left: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+.btn-scroll-top:hover {
+  opacity: 0.9;
 }

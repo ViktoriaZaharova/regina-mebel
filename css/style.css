@@ -170,6 +170,11 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   transition: 0.3s ease;
 }
 
+.btn-lg {
+  height: 62px;
+  font-size: 22px;
+}
+
 .btn-accent {
   border-color: #000;
   color: #e3e3e3;
@@ -178,6 +183,16 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 .btn-accent:hover, .btn-accent:focus {
   background: rgb(66.7734375, 10.2265625, 25.8671875);
   border-color: rgb(66.7734375, 10.2265625, 25.8671875);
+  color: #fff;
+}
+
+.btn-white {
+  background: #fff;
+  border: 1px solid #000000;
+  color: #000;
+}
+.btn-white:hover, .btn-white:focus {
+  background: rgb(111, 17, 43);
   color: #fff;
 }
 
@@ -222,8 +237,24 @@ h2, .h2 {
   font-size: 28px;
 }
 
+.m-auto {
+  margin: 0 auto;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 .mb-16 {
   margin-bottom: 16px;
+}
+
+.mt-45 {
+  margin-top: 45px;
+}
+
+.mt-30 {
+  margin-top: 30px;
 }
 
 .mt-20 {
@@ -232,6 +263,10 @@ h2, .h2 {
 
 .p-30 {
   padding: 30px 0;
+}
+
+.p-90 {
+  padding: 90px 0;
 }
 
 .box-text p {
@@ -298,6 +333,15 @@ h2, .h2 {
   width: 100%;
 }
 
+.page h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(111, 17, 43);
+  text-transform: none;
+  font-size: 42px;
+  margin: 0 auto 30px;
+}
+
 .dropdown-toggle {
   display: flex;
   align-items: center;
@@ -331,9 +375,9 @@ h2, .h2 {
   transition: opacity 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
   background: #fff;
   border: none;
-  left: 50%;
-  top: 100%;
-  transform: translate(-50%, 0);
+  left: 50% !important;
+  top: 100% !important;
+  transform: translate(-50%, 0) !important;
   padding: 20px 24px 20px 16px;
 }
 .dropdown-menu::before {

@@ -156,3 +156,87 @@
 .slogan-company-wrapper {
   padding: 40.5px 0;
 }
+
+.cooperation {
+  padding: 60px 0;
+}
+
+.cooperation-box {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  font-size: 22px;
+  line-height: 1.35;
+}
+.cooperation-box::before {
+  content: "";
+  margin: 0 20px 0 0;
+  width: 45px;
+  height: 49px;
+  min-width: 45px;
+  background: url("../img/guarantee.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.video-box {
+  width: 100%;
+  max-width: 960px;
+  padding-top: 56.25%;
+  margin: 0 auto;
+  position: relative;
+}
+.video-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.electronic-catalog-box {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  background: #d8dad9;
+}
+.electronic-catalog-box__img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.electronic-catalog-box__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.electronic-catalog-box__body {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.electronic-catalog-box__title {
+  font-size: 36px;
+  line-height: 1.23;
+  max-width: 360px;
+  color: #000;
+  margin: 0 auto;
+}
+.electronic-catalog-box__title:hover {
+  color: rgb(111, 17, 43);
+}
+.electronic-catalog-box .box-text {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 20px auto 0;
+  opacity: 0.7;
+  line-height: 25px;
+  max-width: 380px;
+}
