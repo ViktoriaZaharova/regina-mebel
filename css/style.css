@@ -241,6 +241,10 @@ h2, .h2 {
   margin: 0 auto;
 }
 
+.m-20 {
+  margin: 20px 0;
+}
+
 .mb-15 {
   margin-bottom: 15px;
 }
@@ -267,6 +271,10 @@ h2, .h2 {
 
 .p-90 {
   padding: 90px 0;
+}
+
+.text-decoration {
+  text-decoration: underline;
 }
 
 .box-text p {
